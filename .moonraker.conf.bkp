@@ -59,6 +59,8 @@ origin = https://github.com/mainsail-crew/mainsail-config.git
 managed_services = klipper
 
 [timelapse]
+flip_x = True
+flip_y = True
 output_path = ~/timelapse/
 ffmpeg_binary_path = /usr/bin/ffmpeg
 
@@ -87,8 +89,7 @@ install_script = tools/install.sh
 type = git_repo
 path = ~/crowsnest
 origin = https://github.com/mainsail-crew/crowsnest.git
-managed_services = crowsnest
-install_script = tools/install.sh
+install_script = tools/pkglist.sh
 
 [update_manager led_effect]
 type = git_repo
